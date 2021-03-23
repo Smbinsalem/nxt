@@ -1,26 +1,24 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { GlobalStyle } from "./globalstyle";
 import Wrapper from "./Components/Wrapper";
-import Listing from "./Components/University";
-import {
-  UniversityData,
-  afterGradCourses,
-} from "./Components/University/UniversityList";
-import Showbar from "./Components/Showbar";
 import Footer from "./Components/Footer";
+import HomePage from "./Components/Pages/Home";
+import UniPage from "./Components/Pages/Uni";
 
 function App() {
   return (
     <Router>
       <GlobalStyle />
       <Wrapper />
-      <Listing heading="Choose your university" data={UniversityData} />
-      <Showbar />
-      <Listing
-        heading="after Graduation courses for You"
-        data={afterGradCourses}
-      />
+      <Switch>
+        <Route exact path="/">
+          <HomePage />
+        </Route>
+        <Route path="/universities">
+          <UniPage />
+        </Route>
+      </Switch>
       <Footer />
     </Router>
   );

@@ -1,4 +1,6 @@
 import React from "react";
+import { Route, Switch } from "react-router-dom";
+import UniPage from "../Pages/Uni";
 import {
   SidebarContainer,
   Icon,
@@ -16,9 +18,9 @@ const Sidebar = ({ Menu, toggle }) => {
         <CloseIcon />
       </Icon>
       <SidebarMenu>
-        <SidebarLink to="/">University</SidebarLink>
+        <SidebarLink to="/universities">Universities</SidebarLink>
         <SidebarLink to="/">Courses</SidebarLink>
-        <SidebarLink to="/">Students</SidebarLink>
+        <SidebarLink>Students</SidebarLink>
       </SidebarMenu>
       <SideBtnWrap>
         <SidebarRoute to="/">Join Now</SidebarRoute>

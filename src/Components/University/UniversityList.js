@@ -8,8 +8,8 @@ import Course3 from "../../images/Course3.jpg";
 export const UniversityData = [
   {
     img: University1,
-    alt: "University",
-    name: "Kuwait University",
+    alt: "Kuwait University",
+    name: "KU",
     desc:
       "Kuwait university as it is the first governmental university established in 1966 in the state of Kuwait",
     button: "Register now",
@@ -17,16 +17,15 @@ export const UniversityData = [
   {
     img: University2,
     alt: "American University of the Middle East",
-    name:
-      "The American University of the Middle East (AUM) is a leading higher education institution in Kuwait and the region.",
+    name: "AUM",
     desc:
-      " Marinara sauce, basil, italian sausage, roma tomatoes, olives, and pesto",
+      " The American University of the Middle East is a leading higher education institution in Kuwait and the region.",
     button: "Register now",
   },
   {
     img: University3,
-    alt: "University",
-    name: "Austrailian College of Kuwait",
+    alt: "Austrailian College of Kuwait",
+    name: "ACK",
     desc:
       " Established in 2004, ACK is one of the first private universities in Kuwait.  The College offers world-class higher education on home ground through international learning partnerships.",
     button: "Register now",
