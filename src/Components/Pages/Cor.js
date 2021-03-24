@@ -1,16 +1,16 @@
 import React from "react";
-import universityStore from "../../Store/UniversityStore";
+import courseStore from "../../Store/CourseStore";
 import { observer } from "mobx-react";
 
-const UniPage = () => {
-  return universityStore.universities.map((university) => {
+const CoursePage = () => {
+  return courseStore.courses.map((course) => {
     return (
       <>
-        <p>{university.name}</p>
-        <p>{university.country}</p>
+        <p>{course.name}</p>
+        <p>{course.country}</p>
       </>
     );
   });
 };
 
-export default observer(UniPage);
+export default observer(CoursePage);
